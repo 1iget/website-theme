@@ -1,0 +1,13 @@
+@import 'variables';
+
+@import 'header/header';
+@import 'header/menu';
+@import 'header/logo';
+@import 'header/home-about';
+
+@import 'bootstrap-css';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-custom';
+
+.mark2 {
+  border: 1px solid gray;
+}

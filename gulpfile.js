@@ -15,14 +15,14 @@ function errorLog (error) {
 
 //sass + prefix
 gulp.task('sass', function () {
-  return gulp.src('./sass/styles.scss')
+  return gulp.src('./src/sass/styles.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix('last 2 versions'))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('minify-css', function () {
-  return gulp.src('./css/styles.css')
+  return gulp.src('./dist/css/styles.css')
     // .pipe(sourcemaps.init())
     .pipe(cleanCSS())
     // .pipe(sourcemaps.write())
@@ -32,7 +32,7 @@ gulp.task('minify-css', function () {
 
 // var jsDest = 'dist';
 // gulp.task('js', function () {
-//   return gulp.src(['js/jquery/**/*.js', 'js/typed/**/*.js', 'js/bootstrap/**/*.js', 'js/aos/**/*.js', 'js/myScripts/**/*.js'])
+//   return gulp.src(['src/js/jquery/**/*.js', 'src/js/typed/**/*.js', 'src/js/bootstrap/**/*.js', 'src/js/aos/**/*.js', 'src/js/myScripts/**/*.js'])
 //         .pipe(concat('script.js'))
 //         .pipe(gulp.dest(jsDest))
 //         .pipe(rename('script.min.js'))
@@ -42,8 +42,8 @@ gulp.task('minify-css', function () {
 
 gulp.task('browser-sync', function () {
     browserSync.init({
-        proxy: "write-the-docs.dev", 
-        open: false
+      proxy: "write-the-docs.dev", 
+      open: false
     });
 });
 
@@ -52,8 +52,8 @@ gulp.task('reload', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('sass/**/*.scss', ['sass', 'reload']);
-  gulp.watch('css/styles.css', ['minify-css', 'reload']);
+  gulp.watch('src/sass/**/*.scss', ['sass', 'reload']);
+  gulp.watch('dist/css/styles.css', ['minify-css', 'reload']);
   // gulp.watch('js/**/*.js', ['js', 'reload']);
   gulp.watch('*.html', ['reload']);
 });
