@@ -1,0 +1,28 @@
+.join {
+  background-color: $yellow-footer;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  
+  &__heading {
+    font-size: 24px;
+    color: #fff;
+    margin: 40px;
+  }
+  
+  &__talk, &__ticket {
+    &:hover, &:focus {
+      border-color: #fff !important;
+    }
+  }
+  
+  &__ticket {
+    background-color: #fff !important;
+    color: $yellow-footer !important;
+  }
+  
+  &__paragraph {
+    color: #fff;
+    display: inline-block;
+    padding: 25px;
+  }
+}

@@ -29,6 +29,7 @@ $color5: #455560;
 $color6: #162732;
 
 $yellow: #FDB812;
+$yellow-footer: #FFC63A;
 
 
 //== Scaffolding
@@ -36,7 +37,7 @@ $yellow: #FDB812;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #fff !default;
+$body-bg:               #F3F3F3 !default;
 //** Global text color on `<body>`.
 $text-color:            rgba(#132530, .5) !default;
 
@@ -163,8 +164,8 @@ $btn-default-bg:                 #fff !default;
 $btn-default-border:             #ccc !default;
 
 $btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-bg:                 transparent !default;
+$btn-primary-border:             #fff !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;

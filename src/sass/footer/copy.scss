@@ -1,0 +1,26 @@
+.copy {
+  &__item {
+    color: rgba(#fff, .8);
+    padding-left: 40px;
+    
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+    &::before {
+      content: '| ';
+      color: rgba(#fff, .2);
+      padding-right: 30px;
+    }
+    
+    &--first {
+      color: rgba(#fff, .2);
+      padding: 0;
+      
+      &::before {
+        content: none;
+      }
+    }
+  }
+}

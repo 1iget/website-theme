@@ -1,0 +1,88 @@
+$padding-horizontal-lg: 100px;
+$padding-vertical-lg: 70px;
+
+.main {
+  width: 100%;
+  background-color: #fff;
+  margin-top: -60px;
+  margin-bottom: 60px;
+  padding: $padding-vertical-lg/4 $padding-horizontal-lg/4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  
+  @media (min-width: $screen-sm-min) {
+    padding: $padding-vertical-lg/2 $padding-horizontal-lg/2;
+  }
+  @media (min-width: $screen-md-min) {
+    padding: $padding-vertical-lg $padding-horizontal-lg;
+  }
+  
+  &--2c {
+    @media (min-width: $screen-md-min) {
+      columns: 2;
+      column-gap: 80px;
+    }
+  }
+  
+  &__heading {
+    font-size: 20px;
+    color: #45545F;
+    margin-bottom: 40px;
+    line-height: 1.7em;
+  }
+  
+  &__paragraph {
+    line-height: 1.85em;
+    margin-bottom: 20px;
+    color: #45545F;
+  }
+  
+  &__list {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #45545F;
+    margin-left: 0;
+    padding-left: 1em;
+    
+    & > {
+      li {
+        padding-left: 1.6em;
+        padding-bottom: 10px;
+        line-height: 1.6em;
+        
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  
+  &__image {
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    margin-left: calc((-1) * #{$padding-horizontal-lg/4});  //if calc not working, design will not break
+    margin-right: calc((-1) * #{$padding-horizontal-lg/4});
+    width: 100%;
+    width: calc(100% + 2*#{$padding-horizontal-lg}/4);
+    
+    @media (min-width: $screen-sm-min) {
+      margin-left: calc((-1) * #{$padding-horizontal-lg/2});
+      margin-right: calc((-1) * #{$padding-horizontal-lg/2});
+      width: 100%;
+      width: calc(100% + 2*#{$padding-horizontal-lg/2});
+    }
+    @media (min-width: $screen-md-min) {
+      margin-left: calc((-1) * #{$padding-horizontal-lg});
+      margin-right: calc((-1) * #{$padding-horizontal-lg});
+      width: 100%;
+      width: calc(100% + 2*#{$padding-horizontal-lg});
+    }
+    
+    &--columns {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}
