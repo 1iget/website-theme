@@ -3,6 +3,8 @@ $padding-vertical-lg: 70px;
 
 .main {
   width: 100%;
+  max-width: 750px;
+  margin: auto;
   background-color: #fff;
   padding: $padding-vertical-lg/4 $padding-horizontal-lg/4;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
@@ -15,6 +17,7 @@ $padding-vertical-lg: 70px;
   }
   
   &--2c {
+    max-width: 100%;
     @media (min-width: $screen-md-min) {
       columns: 2;
       column-gap: 80px;

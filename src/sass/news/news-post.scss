@@ -1,0 +1,11 @@
+.news-post {
+  &__time {
+    color: #122530;
+    opacity: .4;
+    text-align: center;
+    margin-bottom: 40px;
+    span {
+      padding: 8px;
+    }
+  }
+}

@@ -6,8 +6,12 @@
     font-size: 24px;
     color: #132530;
     position: relative;
-    margin-top: 75px;
+    margin-top: 40px;
     margin-bottom: 140px;
+    
+    @media (min-width: $screen-sm-min) {
+      margin-top: 75px;
+    }
     
     &::after {
       content: '';
@@ -18,6 +22,31 @@
       background-color: $yellow;
       width: 46px;
       height: 4px;
+    }
+  }
+  
+  &__title-group {
+    position: relative;
+  }
+  
+  &__back {
+    font-size: 38px;
+    font-weight: bold;
+    color: #000;
+    opacity: .3;
+    cursor: pointer;
+    margin-top: 40px;
+    display: block;
+    // font-family: 'ico-moon'; (shape)
+    @media (min-width: $screen-sm-min) {
+      margin-top: 0;
+      position: absolute;
+      left: 0;
+      top: -10px;
+    }
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
     }
   }
 }

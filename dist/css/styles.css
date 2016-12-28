@@ -6,8 +6,11 @@
     font-size: 24px;
     color: #132530;
     position: relative;
-    margin-top: 75px;
+    margin-top: 40px;
     margin-bottom: 140px; }
+    @media (min-width: 768px) {
+      .header__title {
+        margin-top: 75px; } }
     .header__title::after {
       content: '';
       position: absolute;
@@ -17,6 +20,25 @@
       background-color: #FDB812;
       width: 46px;
       height: 4px; }
+  .header__title-group {
+    position: relative; }
+  .header__back {
+    font-size: 38px;
+    font-weight: bold;
+    color: #000;
+    opacity: .3;
+    cursor: pointer;
+    margin-top: 40px;
+    display: block; }
+    @media (min-width: 768px) {
+      .header__back {
+        margin-top: 0;
+        position: absolute;
+        left: 0;
+        top: -10px; } }
+    .header__back:hover {
+      opacity: 1;
+      text-decoration: none; }
 
 .menu {
   width: 100%;
@@ -50,8 +72,8 @@
 .logo {
   margin-top: 80px;
   line-height: 2.9em;
-  border-right: 1px solid #ECEEF0;
-  border-left: 1px solid #ECEEF0; }
+  border-right: 1px solid #D9DDE0;
+  border-left: 1px solid #D9DDE0; }
   .logo__line1, .logo__line2, .logo__line3, .logo__portland {
     display: block;
     text-transform: uppercase;
@@ -77,7 +99,7 @@
   margin-top: 80px;
   margin-left: 65px;
   padding-right: 90px;
-  border-right: 1px solid #ECEEF0;
+  border-right: 1px solid #D9DDE0;
   margin-bottom: 140px; }
   .home-about__heading {
     color: #132530;
@@ -89,6 +111,8 @@
 
 .main {
   width: 100%;
+  max-width: 750px;
+  margin: auto;
   background-color: #fff;
   padding: 17.5px 25px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
@@ -98,12 +122,14 @@
   @media (min-width: 992px) {
     .main {
       padding: 70px 100px; } }
-  @media (min-width: 992px) {
-    .main--2c {
-      -moz-columns: 2;
-           columns: 2;
-      -moz-column-gap: 80px;
-           column-gap: 80px; } }
+  .main--2c {
+    max-width: 100%; }
+    @media (min-width: 992px) {
+      .main--2c {
+        -moz-columns: 2;
+             columns: 2;
+        -moz-column-gap: 80px;
+             column-gap: 80px; } }
   .main__heading {
     font-size: 20px;
     color: #45545F;
@@ -174,6 +200,63 @@
     border-color: #B0B6BB !important;
     color: #B0B6BB !important;
     text-transform: uppercase; }
+
+.news__tile {
+  padding: 40px !important; }
+
+.news__more {
+  border-color: #B0B6BB !important;
+  color: #B0B6BB !important;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 56px !important;
+  padding-right: 56px !important;
+  padding-top: 21px !important;
+  padding-bottom: 21px !important;
+  border-width: 2px !important;
+  opacity: .5; }
+  .news__more:active {
+    box-shadow: none !important; }
+
+.news-post__time {
+  color: #122530;
+  opacity: .4;
+  text-align: center;
+  margin-bottom: 40px; }
+  .news-post__time span {
+    padding: 8px; }
+
+.well {
+  display: block;
+  cursor: pointer;
+  height: 300px;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important; }
+  .well:hover {
+    text-decoration: none; }
+  .well__title {
+    color: #122530;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.85; }
+  .well__paragraph {
+    color: #45545F;
+    max-height: 120px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    line-height: 1.85; }
+  .well__time {
+    color: #122530;
+    opacity: .4;
+    margin-bottom: 40px;
+    font-size: 11px; }
+    .well__time span {
+      padding: 8px; }
+      .well__time span:first-child {
+        padding-left: 0; }
 
 .join {
   background-color: #FFC63A;

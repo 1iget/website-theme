@@ -1,0 +1,23 @@
+.news {
+  &__tile {
+    padding: 40px !important;
+  }
+  
+  &__more {
+    border-color: #B0B6BB !important;
+    color: #B0B6BB !important;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+    padding-top: 21px !important;
+    padding-bottom: 21px !important;
+    border-width: 2px !important;
+    opacity: .5;
+    
+    &:active {
+      box-shadow: none !important;
+    }
+  }
+}
