@@ -1,0 +1,44 @@
+.subheader {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  
+  &__yellow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+    z-index: 1;
+    background-color: $yellow;
+  }
+  
+  &__header {
+    color: #B0B6BB;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    @media (min-width: $screen-sm-min) {
+      padding-top: 0;
+    }
+  }
+  
+  &__more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    color: #B0B6BB;
+    text-transform: uppercase;
+    z-index: 1;
+    &::after {
+      content: '→';
+    }
+    &:hover {
+      color: #B0B6BB;
+      text-decoration: none;
+    }
+  }
+}

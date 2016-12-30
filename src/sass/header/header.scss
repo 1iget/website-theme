@@ -37,6 +37,7 @@
     cursor: pointer;
     margin-top: 40px;
     display: block;
+    z-index: 1;
     // font-family: 'ico-moon'; (shape)
     @media (min-width: $screen-sm-min) {
       margin-top: 0;

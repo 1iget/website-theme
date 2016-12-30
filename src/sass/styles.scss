@@ -8,15 +8,23 @@
 @import 'main/main';
 @import 'main/main-container';
 
+@import 'section/section';
+@import 'section/subheader';
+
 @import 'contact/contact';
 
 @import 'news/news';
 @import 'news/news-post';
-@import 'news/well';
+
+@import 'well/well';    
+
+@import 'home/home';
+@import 'buy-ticket/buy-ticket';
 
 @import 'footer/join';
 @import 'footer/footer';
 @import 'footer/copy';
+@import 'footer/socials';
 
 @import 'button/button';
 

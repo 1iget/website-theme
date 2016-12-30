@@ -1,0 +1,8 @@
+.socials {
+  &__item {
+    padding: 16px;
+    @media (min-width: $screen-md-min) {
+      padding: 0;
+    }
+  }
+}

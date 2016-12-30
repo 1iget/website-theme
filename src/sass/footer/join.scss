@@ -10,6 +10,10 @@
   }
   
   &__talk, &__ticket {
+    display: block !important;
+    @media (min-width: $screen-sm-min) {
+      display: inline-block !important;
+    }
     &:hover, &:focus {
       border-color: #fff !important;
     }
