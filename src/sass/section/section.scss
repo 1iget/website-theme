@@ -1,4 +1,13 @@
 .section {
   padding-bottom: 70px;
   border-bottom: 1px solid #E3E4E5;
+  
+  &--last {
+    border-bottom: none;
+  }
+  
+  &__more {
+    color: #B0B6BB;
+    margin-top: 50px;
+  }
 }

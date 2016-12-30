@@ -10,6 +10,7 @@
 
 @import 'section/section';
 @import 'section/subheader';
+@import 'section/person';
 
 @import 'contact/contact';
 
@@ -28,8 +29,8 @@
 
 @import 'button/button';
 
-@import 'bootstrap-css';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-custom';
+@import 'bootstrap-css';
 
 .mark2 {
   border: 1px solid gray;

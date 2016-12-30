@@ -1,27 +1,47 @@
 .buy-ticket {
   min-height: 120px;
   background-color: #132530;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (min-width: $screen-sm-min) {
+    padding-left: 0;
+    padding-right: 0;
+  }
   
   &__p {
     color: #fff;
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: block;
+    @media (min-width: $screen-sm-min) {
+      display: inline-block;
+    }
     &--first {
       margin-top: 53px;
+      padding-top: 0;
+      padding-bottom: 0;
     }
   }
   
-  &__2nd {
+  &__2nd-col {
     padding-top: 30px;
     padding-bottom: 30px;
     @media (min-width: $screen-md-min) {
       padding-right: 44px;
     }
   }
+  
   &__talk, &__ticket {
     border-color: $yellow !important;
-    display: inline-block;
+    display: block;
+    width: 100%;
+    @media (min-width: $screen-sm-min) {
+      display: inline-block;
+      width: auto;
+    }
   }
   
   &__ticket {

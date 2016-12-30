@@ -180,10 +180,17 @@
 .main-container {
   margin-top: -60px;
   margin-bottom: 60px; }
+  .main-container--home {
+    margin-bottom: 20px; }
 
 .section {
   padding-bottom: 70px;
   border-bottom: 1px solid #E3E4E5; }
+  .section--last {
+    border-bottom: none; }
+  .section__more {
+    color: #B0B6BB;
+    margin-top: 50px; }
 
 .subheader {
   position: relative;
@@ -220,6 +227,21 @@
     .subheader__more:hover {
       color: #B0B6BB;
       text-decoration: none; }
+
+.person {
+  padding: 5px;
+  padding-bottom: 35px;
+  height: 270px; }
+  @media (min-width: 992px) {
+    .person {
+      padding-bottom: 50px; } }
+  .person__img {
+    max-width: 150px;
+    width: 100%; }
+  .person__name {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #152530; }
 
 .contact {
   max-width: 750px;
@@ -305,23 +327,42 @@
 
 .buy-ticket {
   min-height: 120px;
-  background-color: #132530; }
+  background-color: #132530;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .buy-ticket {
+      padding-left: 0;
+      padding-right: 0; } }
   .buy-ticket__p {
     color: #fff;
     display: inline-block;
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: block; }
+    @media (min-width: 768px) {
+      .buy-ticket__p {
+        display: inline-block; } }
     .buy-ticket__p--first {
-      margin-top: 53px; }
-  .buy-ticket__2nd {
+      margin-top: 53px;
+      padding-top: 0;
+      padding-bottom: 0; }
+  .buy-ticket__2nd-col {
     padding-top: 30px;
     padding-bottom: 30px; }
     @media (min-width: 992px) {
-      .buy-ticket__2nd {
+      .buy-ticket__2nd-col {
         padding-right: 44px; } }
   .buy-ticket__talk, .buy-ticket__ticket {
     border-color: #FDB812 !important;
-    display: inline-block; }
+    display: block;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .buy-ticket__talk, .buy-ticket__ticket {
+        display: inline-block;
+        width: auto; } }
   .buy-ticket__ticket {
     background-color: #FDB812 !important; }
 
@@ -396,80 +437,6 @@
   padding-right: 30px !important; }
   .button:active {
     box-shadow: none !important; }
-
-.container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important; }
-
-@media (min-width: 1200px) {
-  .container {
-    padding-left: 0 !important;
-    padding-right: 0 !important; } }
-
-.list-inline {
-  margin-left: 0 !important;
-  margin-right: 0 !important; }
-  .list-inline > li {
-    padding-left: 0 !important;
-    padding-right: 0 !important; }
-
-.btn:focus, .btn:active:focus, .btn.active:focus,
-.btn.focus, .btn:active.focus, .btn.active.focus {
-  text-decoration: none !important;
-  outline: none !important; }
-
-.btn-link:focus, .btn-link:active:focus, .btn-link.active:focus,
-.btn-link.focus, .btn-link:active.focus, .btn-link.active.focus {
-  text-decoration: none !important;
-  outline: none !important; }
-
-button:focus, button:active:focus, button.active:focus,
-button.focus, button:active.focus, button.active.focus,
-input.focus, input:active.focus, input.active.focus,
-input:focus, input:active:focus, input.active:focus {
-  outline: none !important; }
-
-.text-xs-left {
-  text-align: left; }
-
-.text-xs-right {
-  text-align: right; }
-
-.text-xs-center {
-  text-align: center; }
-
-.text-xs-justify {
-  text-align: justify; }
-
-@media (min-width: 768px) {
-  .text-sm-left {
-    text-align: left; }
-  .text-sm-right {
-    text-align: right; }
-  .text-sm-center {
-    text-align: center; }
-  .text-sm-justify {
-    text-align: justify; } }
-
-@media (min-width: 992px) {
-  .text-md-left {
-    text-align: left; }
-  .text-md-right {
-    text-align: right; }
-  .text-md-center {
-    text-align: center; }
-  .text-md-justify {
-    text-align: justify; } }
-
-@media (min-width: 1200px) {
-  .text-lg-left {
-    text-align: left; }
-  .text-lg-right {
-    text-align: right; }
-  .text-lg-center {
-    text-align: center; }
-  .text-lg-justify {
-    text-align: justify; } }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -6202,6 +6169,110 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+@media (min-width: 1200px) {
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
+.list-inline {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+  .list-inline > li {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+
+.btn:focus, .btn:active:focus, .btn.active:focus,
+.btn.focus, .btn:active.focus, .btn.active.focus {
+  text-decoration: none !important;
+  outline: none !important; }
+
+.btn-link:focus, .btn-link:active:focus, .btn-link.active:focus,
+.btn-link.focus, .btn-link:active.focus, .btn-link.active.focus {
+  text-decoration: none !important;
+  outline: none !important; }
+
+button:focus, button:active:focus, button.active:focus,
+button.focus, button:active.focus, button.active.focus,
+input.focus, input:active.focus, input.active.focus,
+input:focus, input:active:focus, input.active:focus {
+  outline: none !important; }
+
+.text-xs-left {
+  text-align: left; }
+
+.text-xs-right {
+  text-align: right; }
+
+.text-xs-center {
+  text-align: center; }
+
+.text-xs-justify {
+  text-align: justify; }
+
+@media (min-width: 768px) {
+  .text-sm-left {
+    text-align: left; }
+  .text-sm-right {
+    text-align: right; }
+  .text-sm-center {
+    text-align: center; }
+  .text-sm-justify {
+    text-align: justify; } }
+
+@media (min-width: 992px) {
+  .text-md-left {
+    text-align: left; }
+  .text-md-right {
+    text-align: right; }
+  .text-md-center {
+    text-align: center; }
+  .text-md-justify {
+    text-align: justify; } }
+
+@media (min-width: 1200px) {
+  .text-lg-left {
+    text-align: left; }
+  .text-lg-right {
+    text-align: right; }
+  .text-lg-center {
+    text-align: center; }
+  .text-lg-justify {
+    text-align: justify; } }
+
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 1200px) {
+    .col-lg-1-5 {
+      float: left;
+      width: 20%; } }
+
+.col-md-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .col-md-1-5 {
+      float: left;
+      width: 20%; } }
+
+.col-sm-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .col-sm-1-5 {
+      float: left;
+      width: 20%; } }
 
 .mark2 {
   border: 1px solid gray; }

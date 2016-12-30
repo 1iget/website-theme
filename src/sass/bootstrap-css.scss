@@ -65,3 +65,13 @@ input:focus,input:active:focus,input.active:focus {
    .text-lg-center { text-align: center; }
    .text-lg-justify { text-align: justify; }
 }
+
+.col-lg-1-5 {
+  @include make-lg-column(2.4)
+}
+.col-md-1-5 {
+  @include make-md-column(2.4)
+}
+.col-sm-1-5 {
+  @include make-sm-column(2.4)
+}
