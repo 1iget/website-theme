@@ -32,8 +32,12 @@ gulp.task('minify-css', function () {
 
 var jsDest = 'dist';
 gulp.task('js', function () {
-  return gulp.src(['node_modules/jquery/dist/jquery.js', 'src/js/**/*.js'])
-        .pipe(concat('script.js'))
+  return gulp.src(['node_modules/jquery/dist/jquery.js', 
+  'node_modules/bootstrap-sass/assets/javascripts/bootstrap/tab.js', 
+  'node_modules/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+  'src/owl/owl.carousel.js',
+  'src/js/**/*.js'])
+        .pipe(concat('js/script.js'))
         .pipe(gulp.dest(jsDest))
         .pipe(rename('script.min.js'))
         .pipe(uglify())

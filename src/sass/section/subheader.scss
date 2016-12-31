@@ -34,7 +34,7 @@
     text-transform: uppercase;
     z-index: 1;
     &::after {
-      content: '→';
+      content: ' →';
     }
     &:hover {
       color: #B0B6BB;

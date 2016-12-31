@@ -1,0 +1,75 @@
+.schedule-home {
+  position: relative;
+  
+  &__tile {
+    margin-bottom: 80px;
+    &--last {
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__date {
+    color: #122530;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 14px;
+    padding-right: 24px;
+    padding-left: 24px;
+    border-radius: 2em;
+    display: inline-block;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    margin-bottom: 1.5em;
+  }
+  
+  &__day {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 14px;
+    color: #122530;
+  }
+  
+  &__desc {
+    display: inline-block;
+    color: #556772;
+    max-width: 300px;
+    margin-bottom: 2em;
+    line-height: 1.85em;
+  }
+  
+  &__more {
+    display: block;
+    text-transform: uppercase;
+    color: #B0B6BB;
+    font-size: 12px;
+    
+    &::after {
+      content: ' →';
+    }
+    &:hover {
+      color: #B0B6BB;
+      text-decoration: none;
+    }
+  }
+  
+  &__line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 21px;
+    height: 4px;
+    background-color: #fff;
+    width: 0;
+    display: none;
+    @media (min-width: $screen-sm-min) {
+      display: block;
+      width: 500px;
+    }
+    @media (min-width: $screen-md-min) {
+      width: 640px;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 780px;
+    }
+  }
+}

@@ -10,6 +10,7 @@
 
 @import 'section/section';
 @import 'section/subheader';
+@import 'section/schedule-home';
 @import 'section/person';
 
 @import 'contact/contact';
@@ -17,20 +18,25 @@
 @import 'news/news';
 @import 'news/news-post';
 
-@import 'well/well';    
+@import 'well/well';  
+@import 'tabs/tabs';
 
+@import 'timeline/timeline';
 @import 'home/home';
 @import 'buy-ticket/buy-ticket';
 
 @import 'footer/join';
 @import 'footer/footer';
 @import 'footer/copy';
+@import 'footer/instagram';
 @import 'footer/socials';
 
 @import 'button/button';
 
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-custom';
 @import 'bootstrap-css';
+
+@import '../owl/owl.carousel.scss';
 
 .mark2 {
   border: 1px solid gray;

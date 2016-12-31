@@ -1,8 +1,11 @@
 .logo {
   margin-top: 80px;
   line-height: 2.9em;
-  border-right: 1px solid #D9DDE0;
-  border-left: 1px solid #D9DDE0;
+  
+  @media (min-width: $screen-md-min) {
+    border-right: 1px solid #D9DDE0;
+    border-left: 1px solid #D9DDE0;
+  }
   
   &__line1, &__line2, &__line3, &__portland {
     display: block;

@@ -1,0 +1,61 @@
+.timeline {
+  padding-top: 10px;
+  
+  $line-margin: 10px;
+  
+  &__border-line {
+    position: relative;
+    border-left: 1px solid #D8D8D8;
+    padding-bottom: 40px;
+    &--last {
+      border-left-color: transparent;
+    }
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #707D82;
+      position: absolute;
+      top: 0;
+      left: -4px;
+    }
+  }
+  
+  &__time, &__desc {
+    margin-top: -5px;
+    color: #45545F;
+    min-height: 90px; 
+  }
+  
+  &__time {
+    text-align: right;
+    margin-right: $line-margin;
+    @media (min-width: $screen-sm-min) {
+      margin-right: $line-margin * 2;
+    }
+    @media (min-width: $screen-md-min) {
+      margin-right: $line-margin * 4;
+    }
+    @media (min-width: $screen-lg-min) {
+      margin-right: $line-margin * 6;
+    }
+  }
+  
+  &__desc {
+    margin-left: $line-margin;
+    @media (min-width: $screen-sm-min) {
+      margin-left: $line-margin * 2;
+    }
+    @media (min-width: $screen-md-min) {
+      margin-left: $line-margin * 4;
+    }
+    @media (min-width: $screen-lg-min) {
+      margin-left: $line-margin * 6;
+    }
+    &--highlighted {
+      color: #FFB61D;
+    }
+  }
+}

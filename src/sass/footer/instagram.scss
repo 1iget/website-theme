@@ -1,0 +1,39 @@
+.instagram {
+  &__tile {
+    display: block;
+    overflow: hidden;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #fff;
+      opacity: 0;
+      z-index: 0;
+      transition: ease 600ms opacity;
+    }
+    &:hover {
+      &::before {
+        opacity: .2;
+      }
+    }
+    height: 50vw;
+    img {
+      height: 50vw;
+    }
+    @media (min-width: $screen-md-min) {
+      height: 20vw;
+      img {
+        height: 20vw;
+      }
+    }
+    @media (min-width: $screen-lg-min) {
+      height: 14.2857vw;
+      img {
+        height: 14.2857vw;
+      }
+    }
+  }
+}
