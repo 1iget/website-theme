@@ -8,35 +8,97 @@
   <link rel="stylesheet" href="dist/styles.min.css">
 </head>
 <body class="home">
+  <div class="menu">
+    <nav>
+      <ul class="list-inline menu__list">
+        <li class="menu__list-item menu__list-item--first">
+          <a href="index.html" class="menu__item menu__item--active menu__item btn btn-link">
+            HI
+          </a>
+        </li><!--
+        --><li class="menu__list-item">
+          <a href="news.html" class="menu__item btn btn-link">
+            News
+          </a>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="schedule.html" class="menu__item btn btn-link">
+            Program
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Overview</a></li>
+            <li><a href="">Hike</a></li>
+            <li><a href="">Writing day</a></li>
+            <li><a href="">Tutorials</a></li>
+            <li><a href="">Welcome reception</a></li>
+            <li><a href="">Presentations</a></li>
+            <li><a href="">Lightning talks</a></li>
+            <li><a href="">Unconference</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item">
+          <a href="#" class="menu__item btn btn-link">
+            Register
+          </a>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="#" class="menu__item btn btn-link" data-dropdown>
+            Speak
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Submit a Talk</a></li>
+            <li><a href="">Presentation Guidelines</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="#" class="menu__item btn btn-link" data-dropdown>
+            Sponsor
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Meet our sponsors</a></li>
+            <li><a href="">Why sponsor</a></li>
+            <li><a href="">Sponsorship levels</a></li>
+            <li><a href="">Contact form</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="#" class="menu__item btn btn-link">
+            Visit
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Venue Information</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Things to Do</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="#" class="menu__item btn btn-link" data-dropdown>
+            About
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Welcome Wagon</a></li>
+            <li><a href="">Meet the Team</a></li>
+            <li><a href="">Past Events</a></li>
+            <li><a href="">Code of Conduct</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item">
+          <a href="contact.html" class="menu__item menu__item--b0 btn btn-link">
+            Contact us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <div class="container-fluid">
     <header class="header">
       <div class="container">
         <!-- nav - czy w grid? czy sticker? (tymczasowo grid) -->
         <div class="row">
-          <div class="col-xs-12">
-            <nav>
-              <ul class="list-inline menu">
-                <li><a href="index.html" class="menu__item menu__item--active menu__item--first btn btn-link">HI</a></li><!--
-                --><li><a href="news.html" class="menu__item btn btn-link">News</a></li><!--
-                --><li><a href="schedule.html" class="menu__item menu__item--dropdown btn btn-link">Program</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Register</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Speak</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Sponsor</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Visit</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">About</a></li><!--
-                --><li><a href="contact.html" class="menu__item menu__item--b0 btn btn-link">Contact us</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-4">
-            <div class="header__logo logo">
-              <span class="logo__line1">Write</span>
-              <span class="logo__line2">The</span>
-              <span class="logo__line3">Docs</span>
-              <span class="logo__portland">Portland</span>
-            </div>
+          <div class="col-xs-12 col-md-4 text-center">
+            <a href="index.html" class="header__logo">
+              <img src="dist/images/logo.svg" alt="Write The Docs">
+            </a>
           </div>
           <div class="col-xs-12 col-md-8 text-xs-right">
             <div class="header__desc home-about">

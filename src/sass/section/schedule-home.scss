@@ -9,6 +9,8 @@
   }
   
   &__date {
+    font-family: "Roboto Mono";
+    font-weight: 700;
     color: #122530;
     font-size: 12px;
     text-transform: uppercase;
@@ -23,6 +25,7 @@
   }
   
   &__day {
+    font-weight: 700;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     font-size: 14px;
@@ -38,6 +41,8 @@
   }
   
   &__more {
+    font-family: "Roboto Mono";
+    font-weight: 700;
     display: block;
     text-transform: uppercase;
     color: #B0B6BB;

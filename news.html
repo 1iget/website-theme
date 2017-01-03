@@ -8,30 +8,36 @@
   <link rel="stylesheet" href="dist/styles.min.css">
 </head>
 <body>
+  <div class="container menu">
+    <nav>
+      <ul class="list-inline menu__ul">
+        <li><a href="index.html" class="menu__item menu__item--active menu__item--first btn btn-link">HI</a></li><!--
+        --><li><a href="news.html" class="menu__item btn btn-link">News</a></li><!--
+        --><li><a href="schedule.html" class="menu__item menu__item--dropdown btn btn-link">Program</a></li><!--
+        --><li><a href="#" class="menu__item btn btn-link">Register</a></li><!--
+        --><li><a href="#" class="menu__item btn btn-link">Speak</a></li><!--
+        --><li><a href="#" class="menu__item btn btn-link">Sponsor</a></li><!--
+        --><li><a href="#" class="menu__item btn btn-link">Visit</a></li><!--
+        --><li><a href="#" class="menu__item btn btn-link">About</a></li><!--
+        --><li><a href="contact.html" class="menu__item menu__item--b0 btn btn-link">Contact us</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="container-fluid">
     <header class="header">
       <div class="container">
         <!-- nav - czy w grid? czy sticker? (tymczasowo grid) -->
         <div class="row">
-          <div class="col-xs-12">
-            <nav>
-              <ul class="list-inline menu">
-                <li><a href="index.html" class="menu__item menu__item--first btn btn-link">HI</a></li><!--
-                --><li><a href="news.html" class="menu__item menu__item--active btn btn-link">News</a></li><!--
-                --><li><a href="schedule.html" class="menu__item menu__item--dropdown btn btn-link">Program</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Register</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Speak</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Sponsor</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Visit</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">About</a></li><!--
-                --><li><a href="contact.html" class="menu__item menu__item--b0 btn btn-link">Contact us</a></li>
-              </ul>
-            </nav>
+          <div class="col-xs-12 col-md-4 text-center">
+            <a href="index.html" class="header__logo">
+              <img src="dist/images/logo.svg" alt="Write The Docs">
+            </a>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 text-center">
-            <h1 class="header__title">Latest News</h1>
+          <div class="col-xs-12 col-md-8 text-xs-right">
+            <div class="header__desc home-about">
+              <h2 class="home-about__heading">Conference focused on documentation systems, tech writing theory and information delivery</h2>
+              <p class="home-about__paragraph">Write the Docs brings everyone who writes the docs together in the same room: Writers, Developers, Support Folks. We all have things to learn from each other, and there’s no better way than sitting together and talking.</p>
+            </div>
           </div>
         </div>
       </div>

@@ -14,6 +14,8 @@
     padding-top: 15px;
     padding-bottom: 10px;
     display: block;
+    font-family: "Roboto Mono";
+    font-weight: 700;
     @media (min-width: $screen-sm-min) {
       display: inline-block;
       padding-left: 20px;
@@ -23,6 +25,7 @@
       margin-top: 53px;
       padding-top: 0;
       padding-bottom: 0;
+      padding-right: 10px;
     }
   }
   
@@ -38,6 +41,8 @@
     border-color: $yellow !important;
     display: block;
     width: 100%;
+    font-family: "Roboto Mono";
+    font-weight: 700;
     @media (min-width: $screen-sm-min) {
       display: inline-block;
       width: auto;
@@ -46,5 +51,6 @@
   
   &__ticket {
     background-color: $yellow !important;
+    color: #132530 !important;
   }
 }

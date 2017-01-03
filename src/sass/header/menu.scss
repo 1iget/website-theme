@@ -1,29 +1,70 @@
 .menu {
-  width: 100%;
+  display: none;
+  @media (min-width: $screen-md-min) {
+    max-width: 940px;
+    display: block;
+  }
+  @media (min-width: $screen-lg-min) {
+    max-width: 1170px;
+  }
+  
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  
+  &__list {
+    margin-bottom: 0;
+  }
+  
+  &__list-item {
+    margin-bottom: 0;
+    @media (min-width: $screen-md-min) {
+      width: 110px;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 138px;
+    }
+    
+    &[data-dropdown] {
+      & > a::after {
+        content: ' >';
+      }
+      &:hover > .menu__dropdown{
+        display: block;
+      }
+    }
+    
+    &--first {
+      width: 60px;
+      @media (min-width: $screen-lg-min) {
+        width: 66px;
+      }
+    }
+  }
   
   &__item {
     text-transform: uppercase;
     color: #132530 !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     border-top: 2px solid transparent !important;
     padding-top: 20px !important;
     padding-bottom: 22px !important;
     padding-left: 20px !important;
     padding-right: 20px !important;
     border-right: 1px solid #ECEEF0 !important;
-    width: 138px;
+    width: 100%;
+    font-family: "Roboto Mono";
+    font-weight: 700;
     
     &:hover {
       text-decoration: none !important;
       background-color: #F1F4F5 !important;
-    }
-    
-    &--first {
-      width: 66px;
-      margin-left: auto;
-      margin-right: auto;
     }
     
     &--b0 {
@@ -33,10 +74,28 @@
     &--active {
       border-top-color: $color6 !important;
     }
+  }
+  
+  &__dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    padding-left: 0;
+    font-family: "Roboto Mono";
+    font-weight: 700;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, .2);
+    font-size: 12px;
+    padding: 10px;
     
-    &--dropdown {
-      &::after {
-        content: ' >';
+    a {
+      display: block;
+      padding: 10px;
+      color: #909BA3;
+      
+      &:hover, &:focus {
+        text-decoration: none;
+        color: #17313F;
       }
     }
   }
