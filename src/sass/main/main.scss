@@ -25,8 +25,9 @@ $padding-vertical-lg: 70px;
   }
   
   &__heading {
+    margin-top: 0;
     font-size: 20px;
-    color: #45545F;
+    color: #152530;
     margin-bottom: 40px;
     line-height: 1.7em;
   }
@@ -34,7 +35,12 @@ $padding-vertical-lg: 70px;
   &__paragraph {
     line-height: 1.85em;
     margin-bottom: 20px;
-    color: #45545F;
+    color: #566772;
+    
+    &--subheader {
+      font-weight: 700;
+      color: #152530;
+    }
   }
   
   &__list {

@@ -17,4 +17,19 @@
     margin-bottom: 15px;
     color: #152530;
   }
+  
+  &__socials {
+    a {
+      font-family: 'ico-moon';
+      color: #152530;
+      opacity: .2;
+      padding: 4px;
+      transition: opacity 200ms ease;
+      &:hover, &:focus {
+        text-decoration: none;
+        color: #152530;
+        opacity: .5;
+      }
+    }
+  }
 }

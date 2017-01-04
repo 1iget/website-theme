@@ -1,8 +1,8 @@
 .buy-ticket {
   min-height: 120px;
   background-color: #132530;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   @media (min-width: $screen-sm-min) {
     padding-left: 0;
     padding-right: 0;
@@ -26,6 +26,23 @@
       padding-top: 0;
       padding-bottom: 0;
       padding-right: 10px;
+      & > {
+        span {
+          display: block;
+          font-size: 5px;
+          visibility: hidden;
+          @media (min-width: $screen-sm-min) {
+            display: inline-block;
+            visibility: visible;
+            font-size: 14px;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+    &--line {
+      display: none;
     }
   }
   
@@ -43,14 +60,21 @@
     width: 100%;
     font-family: "Roboto Mono";
     font-weight: 700;
+    transition: all 200ms ease;
     @media (min-width: $screen-sm-min) {
       display: inline-block;
       width: auto;
+    }
+    &:hover, &:focus {
+      border-color: #FFCA48 !important;
     }
   }
   
   &__ticket {
     background-color: $yellow !important;
     color: #132530 !important;
+    &:hover, &:focus {
+      background-color: #FFCA48 !important;
+    }
   }
 }

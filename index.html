@@ -8,12 +8,83 @@
   <link rel="stylesheet" href="dist/styles.min.css">
 </head>
 <body class="home">
+  <div class="offcanvas--bg" data-offcanvas-bg></div>
+  <div class="offcanvas" data-offcanvas>
+    <button class="offcanvas__close btn-link" data-offcanvas-close>&#xe901;</button>
+    <ul class="offcanvas__menu menu-mobile">
+      <li class="menu-mobile__item">
+        <a href="">News</a>
+      </li>
+      <li class="menu-mobile__item" data-dropdown-mobile>
+        <a href="">Program</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Overview</a></li>
+          <li><a href="">Hike</a></li>
+          <li><a href="">Writing day</a></li>
+          <li><a href="">Tutorials</a></li>
+          <li><a href="">Welcome reception</a></li>
+          <li><a href="">Presentations</a></li>
+          <li><a href="">Lightning talks</a></li>
+          <li><a href="">Unconference</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item">
+        <a href="">Register</a>
+      </li>
+      <li class="menu-mobile__item" data-dropdown-mobile>
+        <a href="">Speak</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Submit a Talk</a></li>
+          <li><a href="">Presentation Guidelines</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item" data-dropdown-mobile>
+        <a href="">Sponsor</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Meet our sponsors</a></li>
+          <li><a href="">Why sponsor</a></li>
+          <li><a href="">Sponsorship levels</a></li>
+          <li><a href="">Contact form</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item">
+        <a href="">Visit</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Venue Information</a></li>
+          <li><a href="">Travel</a></li>
+          <li><a href="">Things to Do</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item" data-dropdown-mobile>
+        <a href="">About</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Welcome Wagon</a></li>
+          <li><a href="">Meet the Team</a></li>
+          <li><a href="">Past Events</a></li>
+          <li><a href="">Code of Conduct</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item">
+        <a href="">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-bar">
+    <div class="mobile-bar__col mobile-bar__col--hamburger">
+      <button class="mobile-bar__hamburger btn-link" data-offcanvas-icon>&#xe900;</button>
+    </div>
+    <div class="mobile-bar__col mobile-bar__col--logo">
+      <a href="index.html">
+        <img src="dist/images/logo-mobile.svg" alt="Write The Docs" class="mobile-bar__logo">
+      </a>
+    </div>
+  </div>
   <div class="menu">
     <nav>
       <ul class="list-inline menu__list">
         <li class="menu__list-item menu__list-item--first">
-          <a href="index.html" class="menu__item menu__item--active menu__item btn btn-link">
-            HI
+          <a href="index.html" class="menu__item menu__item--active menu__item btn btn-link menu__item--home">
+            &#xe907;
           </a>
         </li><!--
         --><li class="menu__list-item">
@@ -42,7 +113,7 @@
           </a>
         </li><!--
         --><li class="menu__list-item" data-dropdown>
-          <a href="#" class="menu__item btn btn-link" data-dropdown>
+          <a href="#" class="menu__item btn btn-link">
             Speak
           </a>
           <ul class="menu__dropdown">
@@ -51,7 +122,7 @@
           </ul>
         </li><!--
         --><li class="menu__list-item" data-dropdown>
-          <a href="#" class="menu__item btn btn-link" data-dropdown>
+          <a href="#" class="menu__item btn btn-link">
             Sponsor
           </a>
           <ul class="menu__dropdown">
@@ -72,7 +143,7 @@
           </ul>
         </li><!--
         --><li class="menu__list-item" data-dropdown>
-          <a href="#" class="menu__item btn btn-link" data-dropdown>
+          <a href="#" class="menu__item btn btn-link">
             About
           </a>
           <ul class="menu__dropdown">
@@ -93,7 +164,6 @@
   <div class="container-fluid">
     <header class="header">
       <div class="container">
-        <!-- nav - czy w grid? czy sticker? (tymczasowo grid) -->
         <div class="row">
           <div class="col-xs-12 col-md-4 text-center">
             <a href="index.html" class="header__logo">
@@ -119,14 +189,16 @@
                 <div class="row">
                   <div class="col-xs-12 col-md-5 text-center">
                     <p class="buy-ticket__p buy-ticket__p--first">
-                      Portland, Oregon &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; May 14-16, 2016
+                      Portland, Oregon 
+                      <span>|</span>
+                      May 14-16, 2016
                     </p>
                   </div>
                   <div class="col-xs-12 col-md-7 text-xs-center text-md-right">
                     <div class="buy-ticket__2nd-col">
-                      <a href="#" class="buy-ticket__talk btn btn-primary button">Submit a talk!</a>
+                      <a href="#" class="btn btn-primary button button--narrow buy-ticket__talk">Submit a talk!</a>
                       <p class="buy-ticket__p">or</p>
-                      <a href="#" class="buy-ticket__ticket btn btn-primary button">Buy a ticket!</a>
+                      <a href="#" class="btn btn-primary button button--narrow buy-ticket__ticket">Buy a ticket!</a>
                     </div>
                   </div>
                 </div>
@@ -266,70 +338,100 @@
                     <div class="person">
                       <img src="dist/images/ted-hudek.jpg" alt="Ted Hudek" class="person__img">
                       <p class="person__name">Ted Hudek</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-6 col-md-1-5 text-center">
                     <div class="person">
                       <img src="dist/images/riona-macnamara.jpg" alt="Riona Macnamara" class="person__img">
                       <p class="person__name">Riona Macnamara</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-6 col-md-1-5 text-center">
                     <div class="person">
                       <img src="dist/images/britta-gustafson.jpg" alt="Britta Gustafson" class="person__img">
                       <p class="person__name">Britta Gustafson</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-6 col-md-1-5 text-center">
                     <div class="person">
                       <img src="dist/images/brianne-hillmer.jpg" alt="Brianne Hillmer" class="person__img">
                       <p class="person__name">Brianne Hillmer</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-6 col-md-1-5 text-center">
                     <div class="person">
                       <img src="dist/images/sharon-campbell.jpg" alt="Sharon Campbell" class="person__img">
                       <p class="person__name">Sharon Campbell</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-6 col-md-1-5 text-center">
                     <div class="person">
                       <img src="dist/images/sharon-campbell.jpg" alt="Sharon Campbell" class="person__img">
                       <p class="person__name">Sharon Campbell</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-6 col-md-1-5 text-center">
                     <div class="person">
                       <img src="dist/images/britta-gustafson.jpg" alt="Britta Gustafson" class="person__img">
                       <p class="person__name">Britta Gustafson</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-6 col-md-1-5 text-center">
                     <div class="person">
                       <img src="dist/images/brianne-hillmer.jpg" alt="Brianne Hillmer" class="person__img">
                       <p class="person__name">Brianne Hillmer</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-6 col-md-1-5 text-center">
                     <div class="person">
                       <img src="dist/images/riona-macnamara.jpg" alt="Riona Macnamara" class="person__img">
                       <p class="person__name">Riona Macnamara</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-6 col-md-1-5 text-center">
                     <div class="person">
                       <img src="dist/images/ted-hudek.jpg" alt="Ted Hudek" class="person__img">
                       <p class="person__name">Ted Hudek</p>
-                      <div class="person__socials">twit, in</div>
+                      <div class="person__socials">
+                        <a href="#">&#xe906;</a>
+                        <a href="#">&#xe902;</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -351,9 +453,9 @@
         <div class="row">
           <div class="col-xs-12 text-center">
             <h4 class="join__heading">Join us now!</h4>
-            <a href="#" class="join__talk btn btn-primary button">Submit a talk!</a>
+            <a href="#" class="btn btn-primary button join__talk">Submit a talk!</a>
             <p class="join__paragraph">or</p>
-            <a href="#" class="join__ticket btn btn-primary button">Buy a ticket!</a>
+            <a href="#" class="btn btn-primary button join__ticket">Buy a ticket!</a>
           </div>
         </div>
       </div>
@@ -381,17 +483,17 @@
         <div class="row">
           <div class="col-xs-12 col-md-9 text-xs-center text-md-left">
             <ul class="list-unstyled footer__copy copy">
-              <li><a href="#" class="copy__item copy__item--first">© 2017 Write the Docs</a></li>
+              <li><p class="copy__item copy__item--first">© 2017 Write the Docs</p></li>
               <li><a href="#" class="copy__item">Code of Conduct</a></li>
               <li><a href="#" class="copy__item">Write the Docs</a></li>
             </ul>
           </div>
           <div class="col-xs-12 col-md-3 text-xs-center text-md-right"> 
             <ul class="socials list-inline">
-              <li><a href="#" class="socials__item">Twi</a></li>
-              <li><a href="#" class="socials__item">Flickr</a></li>
-              <li><a href="#" class="socials__item">Insta</a></li>
-              <li><a href="#" class="socials__item">GitHub</a></li>
+              <li><a href="#" class="socials__item">&#xe906;</a></li>
+              <li><a href="#" class="socials__item socials__item--flickr">&#xe905;</a></li>
+              <li><a href="#" class="socials__item">&#xe904;</a></li>
+              <li><a href="#" class="socials__item">&#xe903;</a></li>
             </ul>
           </div>
         </div>

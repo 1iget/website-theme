@@ -15,6 +15,9 @@
   &__talk, &__ticket {
     display: block !important;
     font-weight: 700 !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: all 200ms ease;
     @media (min-width: $screen-sm-min) {
       display: inline-block !important;
     }
@@ -23,9 +26,19 @@
     }
   }
   
+  &__talk {
+    &:hover, &:focus {
+      color: #152530 !important;
+      border-color: #152530 !important;
+    }
+  }
   &__ticket {
     background-color: #fff !important;
     color: $yellow-footer !important;
+    &:hover, &:focus {
+      background-color: #152530 !important;
+      border-color: #152530 !important;
+    }
   }
   
   &__paragraph {

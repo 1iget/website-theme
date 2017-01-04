@@ -29,4 +29,28 @@ $(document).ready(function() {
     pagination: false
   });
   
+  
+  // hamburger
+  function toggleMenu () {
+    $('[data-offcanvas-bg]').toggleClass('show');
+    $('[data-offcanvas]').toggleClass('show');
+  }
+  
+  $('[data-offcanvas-icon]').click(toggleMenu);
+  $('[data-offcanvas-bg]').click(toggleMenu);
+  $('[data-offcanvas-close]').click(toggleMenu);
+  
+  // dropdown mobile
+  function toggleDropDownMobile (e) {
+    e.preventDefault();
+    $(this).toggleClass('show');
+    if ($(this).hasClass('show')) {
+      $(this).children('.menu-mobile__dropdown').show(200);
+    }
+    else {
+      $(this).children('.menu-mobile__dropdown').hide(200);
+    } 
+  }
+  $('[data-dropdown-mobile]').click(toggleDropDownMobile);
+  
 });

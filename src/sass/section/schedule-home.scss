@@ -46,13 +46,15 @@
     display: block;
     text-transform: uppercase;
     color: #B0B6BB;
+    letter-spacing: .12em;
     font-size: 12px;
+    transition: color 200ms ease;
     
     &::after {
       content: ' →';
     }
-    &:hover {
-      color: #B0B6BB;
+    &:hover, &:focus {
+      color: #132530;
       text-decoration: none;
     }
   }

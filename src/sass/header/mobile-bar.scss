@@ -1,0 +1,54 @@
+.mobile-bar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  height: 60px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+  z-index: 20;
+  
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+  
+  &__logo {
+    height: 30px;
+    display: inline-block;
+  }
+  
+  &__col {
+    position: absolute;
+    height: 60px;
+    display: block;
+    &--hamburger {
+      width: 60px;
+      border-right: 1px solid #ECEEF0;
+    }
+    &--logo {
+      margin-left: 60px;
+      padding-top: 15px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+  }
+  
+  &__hamburger {
+    display: inline-block;
+    float: left;
+    color: #132530;
+    padding: 0 !important;
+    bottom: 0 !important;
+    font-family: 'ico-moon';
+    font-size: 20px;
+    color: #132530 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    margin: 15px;
+    &:hover, &:focus {
+      text-decoration: none !important;
+    }
+  }
+}

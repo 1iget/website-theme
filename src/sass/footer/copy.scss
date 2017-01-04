@@ -9,30 +9,39 @@
   &__item {
     font-family: "Roboto Mono";
     font-weight: 700;
-    color: rgba(#fff, .8);
+    color: #fff;
+    opacity: .8;
     display: block !important;
     padding-top: 20px;
-    padding-bottom: 20px;  
+    padding-bottom: 20px; 
+    transition: opacity 200ms ease;
     @media (min-width: $screen-sm-min) {
       padding-top: 0;
       padding-bottom: 0;
       padding-left: 40px;
       &::before {
         content: '| ';
-        color: rgba(#fff, .2);
+        color: #fff;
+        opacity: .2;
         padding-right: 30px;
       }
     }
     
-    &:hover {
+    &:hover, &:focus {
       text-decoration: none;
       color: #fff;
+      opacity: 1;
     }
     
     &--first {
-      color: rgba(#fff, .2);
+      color: #fff;
+      opacity: .2;
       padding-left: 0;
+      margin-bottom: 0;
       
+      &:hover, &:focus {
+        opacity: .2;
+      }
       &::before {
         content: none;
       }

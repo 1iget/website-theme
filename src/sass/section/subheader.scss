@@ -22,7 +22,7 @@
     font-size: 24px;
     font-family: "Roboto Mono";
     font-weight: 700;
-    letter-spacing: .12em;
+    letter-spacing: .08em;
     @media (min-width: $screen-sm-min) {
       padding-top: 0;
     }
@@ -39,11 +39,12 @@
     color: #B0B6BB;
     text-transform: uppercase;
     z-index: 1;
+    transition: color 200ms ease;
     &::after {
       content: ' →';
     }
-    &:hover {
-      color: #B0B6BB;
+    &:hover, &:focus {
+      color: #132530;
       text-decoration: none;
     }
   }

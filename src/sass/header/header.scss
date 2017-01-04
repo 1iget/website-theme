@@ -3,6 +3,8 @@
   padding-top: 60px;
   
   &__title {
+    font-family: 'Roboto Mono';
+    font-weight: 700;
     margin: auto;
     font-size: 24px;
     color: #132530;
@@ -31,32 +33,34 @@
   }
   
   &__back {
-    font-size: 38px;
+    font-family: 'ico-moon';
+    font-size: 18px;
     font-weight: bold;
-    color: #000;
+    color: #000 !important;
     opacity: .3;
     cursor: pointer;
     margin-top: 40px;
     display: block;
     z-index: 1;
-    // font-family: 'ico-moon'; (shape)
+    transition: opacity 200ms ease;
     @media (min-width: $screen-sm-min) {
       margin-top: 0;
       position: absolute;
       left: 0;
-      top: -10px;
+      top: 4px;
     }
-    &:hover {
-      opacity: 1;
+    &:hover, &:focus {
+      color: #000 !important;
+      opacity: .8;
       text-decoration: none;
     }
   }
   
   &__logo {
-    display: block;
     margin-top: 80px;
-    
-    @media (min-width: $screen-sm-min) {
+    display: none;
+    @media (min-width: $screen-md-min) {
+      display: block;
       border-left: 1px solid #D9DDE0;
       border-right: 1px solid #D9DDE0;
     }

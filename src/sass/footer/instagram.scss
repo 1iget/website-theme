@@ -14,7 +14,7 @@
       z-index: 0;
       transition: ease 600ms opacity;
     }
-    &:hover {
+    &:hover, &:focus {
       &::before {
         opacity: .2;
       }

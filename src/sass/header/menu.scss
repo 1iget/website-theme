@@ -33,9 +33,14 @@
     
     &[data-dropdown] {
       & > a::after {
-        content: ' >';
+        font-family: 'ico-moon' !important;
+        font-size: 5px;
+        color: #B0B6BB;
+        content: ' \e908';
+        display: inline-block;
+        vertical-align: 30%;
       }
-      &:hover > .menu__dropdown{
+      &:hover > .menu__dropdown {
         display: block;
       }
     }
@@ -61,8 +66,9 @@
     width: 100%;
     font-family: "Roboto Mono";
     font-weight: 700;
+    transition: all 200ms ease;
     
-    &:hover {
+    &:hover, &:focus {
       text-decoration: none !important;
       background-color: #F1F4F5 !important;
     }
@@ -73,6 +79,13 @@
     
     &--active {
       border-top-color: $color6 !important;
+    }
+    
+    &--home {
+      font-family: 'ico-moon';
+      font-size: 19px !important;
+      padding-top: 14px !important;
+      padding-bottom: 18px !important;
     }
   }
   
@@ -92,7 +105,7 @@
       display: block;
       padding: 10px;
       color: #909BA3;
-      
+      transition: color 200ms ease;
       &:hover, &:focus {
         text-decoration: none;
         color: #17313F;

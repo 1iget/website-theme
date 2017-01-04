@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700|Roboto+Mono:500,700');
-
+@import 'fonts';
 @import 'variables';
+
+@import 'offcanvas/offcanvas';
+@import 'offcanvas/menu-mobile';
 
 @import 'header/header';
 @import 'header/menu';
+@import 'header/mobile-bar';
 @import 'header/home-about';
 
 @import 'main/main';

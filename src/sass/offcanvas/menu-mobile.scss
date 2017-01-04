@@ -1,0 +1,57 @@
+.menu-mobile {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 30px;
+  
+  &__item {
+    padding-bottom: 20px;
+    a {
+      font-family: "Roboto Mono";
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #fff;
+      &:hover, &:focus {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+    &[data-dropdown-mobile] {
+      & > {
+        a::after {
+          font-family: 'ico-moon' !important;
+          font-size: 5px;
+          color: #B0B6BB;
+          content: ' \e908';
+          display: inline-block;
+          padding: 8px;
+          vertical-align: 40%;
+          transform: rotate(180deg);
+        }
+      }
+      &.show {
+        & > {
+          a::after {
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+  
+  &__dropdown {
+    display: none;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    li {
+      padding-bottom: 10px;
+    }
+    a {
+      color: #fff;
+      opacity: .6;
+      text-transform: none !important;
+      font-size: 14px;
+      list-style: none;
+    }
+  }
+}

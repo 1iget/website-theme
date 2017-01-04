@@ -8,27 +8,162 @@
   <link rel="stylesheet" href="dist/styles.min.css">
 </head>
 <body>
+  <div class="offcanvas--bg" data-offcanvas-bg></div>
+  <div class="offcanvas" data-offcanvas>
+    <button class="offcanvas__close btn-link" data-offcanvas-close>&#xe901;</button>
+    <ul class="offcanvas__menu menu-mobile">
+      <li class="menu-mobile__item">
+        <a href="">News</a>
+      </li>
+      <li class="menu-mobile__item" data-dropdown-mobile>
+        <a href="">Program</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Overview</a></li>
+          <li><a href="">Hike</a></li>
+          <li><a href="">Writing day</a></li>
+          <li><a href="">Tutorials</a></li>
+          <li><a href="">Welcome reception</a></li>
+          <li><a href="">Presentations</a></li>
+          <li><a href="">Lightning talks</a></li>
+          <li><a href="">Unconference</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item">
+        <a href="">Register</a>
+      </li>
+      <li class="menu-mobile__item" data-dropdown-mobile>
+        <a href="">Speak</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Submit a Talk</a></li>
+          <li><a href="">Presentation Guidelines</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item" data-dropdown-mobile>
+        <a href="">Sponsor</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Meet our sponsors</a></li>
+          <li><a href="">Why sponsor</a></li>
+          <li><a href="">Sponsorship levels</a></li>
+          <li><a href="">Contact form</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item">
+        <a href="">Visit</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Venue Information</a></li>
+          <li><a href="">Travel</a></li>
+          <li><a href="">Things to Do</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item" data-dropdown-mobile>
+        <a href="">About</a>
+        <ul class="menu-mobile__dropdown">
+          <li><a href="">Welcome Wagon</a></li>
+          <li><a href="">Meet the Team</a></li>
+          <li><a href="">Past Events</a></li>
+          <li><a href="">Code of Conduct</a></li>
+        </ul>
+      </li>
+      <li class="menu-mobile__item">
+        <a href="">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+  <div class="mobile-bar">
+    <div class="mobile-bar__col mobile-bar__col--hamburger">
+      <button class="mobile-bar__hamburger btn-link" data-offcanvas-icon>&#xe900;</button>
+    </div>
+    <div class="mobile-bar__col mobile-bar__col--logo">
+      <a href="index.html">
+        <img src="dist/images/logo-mobile.svg" alt="Write The Docs" class="mobile-bar__logo">
+      </a>
+    </div>
+  </div>
+  <div class="menu">
+    <nav>
+      <ul class="list-inline menu__list">
+        <li class="menu__list-item menu__list-item--first">
+          <a href="index.html" class="menu__item menu__item btn btn-link menu__item--home">
+            &#xe907;
+          </a>
+        </li><!--
+        --><li class="menu__list-item">
+          <a href="news.html" class="menu__item btn btn-link">
+            News
+          </a>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="schedule.html" class="menu__item menu__item--active btn btn-link">
+            Program
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Overview</a></li>
+            <li><a href="">Hike</a></li>
+            <li><a href="">Writing day</a></li>
+            <li><a href="">Tutorials</a></li>
+            <li><a href="">Welcome reception</a></li>
+            <li><a href="">Presentations</a></li>
+            <li><a href="">Lightning talks</a></li>
+            <li><a href="">Unconference</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item">
+          <a href="#" class="menu__item btn btn-link">
+            Register
+          </a>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="#" class="menu__item btn btn-link">
+            Speak
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Submit a Talk</a></li>
+            <li><a href="">Presentation Guidelines</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="#" class="menu__item btn btn-link">
+            Sponsor
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Meet our sponsors</a></li>
+            <li><a href="">Why sponsor</a></li>
+            <li><a href="">Sponsorship levels</a></li>
+            <li><a href="">Contact form</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="#" class="menu__item btn btn-link">
+            Visit
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Venue Information</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Things to Do</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item" data-dropdown>
+          <a href="#" class="menu__item btn btn-link">
+            About
+          </a>
+          <ul class="menu__dropdown">
+            <li><a href="">Welcome Wagon</a></li>
+            <li><a href="">Meet the Team</a></li>
+            <li><a href="">Past Events</a></li>
+            <li><a href="">Code of Conduct</a></li>
+          </ul>
+        </li><!--
+        --><li class="menu__list-item">
+          <a href="contact.html" class="menu__item menu__item--b0 btn btn-link">
+            Contact us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
   <div class="container-fluid">
     <header class="header">
       <div class="container">
-        <!-- nav - czy w grid? czy sticker? (tymczasowo grid) -->
-        <div class="row">
-          <div class="col-xs-12">
-            <nav>
-              <ul class="list-inline menu">
-                <li><a href="index.html" class="menu__item menu__item--first btn btn-link">HI</a></li><!--
-                --><li><a href="news.html" class="menu__item btn btn-link">News</a></li><!--
-                --><li><a href="schedule.html" class="menu__item menu__item--active menu__item--dropdown btn btn-link">Program</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Register</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Speak</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Sponsor</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">Visit</a></li><!--
-                --><li><a href="#" class="menu__item btn btn-link">About</a></li><!--
-                --><li><a href="contact.html" class="menu__item menu__item--b0 btn btn-link">Contact us</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
         <div class="row">
           <div class="col-xs-12 text-center">
             <h1 class="header__title">Schedule overview</h1>
@@ -77,8 +212,8 @@
                       <p class="timeline__time">08:00 AM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Doors Open, Breakfast Served
+                      <p class="timeline__desc">
+                        <a href="#">Doors Open, Breakfast Served</a>
                       </p>
                     </div>
                   </div>
@@ -107,8 +242,8 @@
                       <p class="timeline__time">09:30 AM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Technical writing as public service: working on open source in government - Britta Gustafson
+                      <p class="timeline__desc">
+                        <a href="#">Technical writing as public service: working on open source in government - Britta Gustafson</a>
                       </p>
                     </div>
                   </div>
@@ -127,8 +262,8 @@
                       <p class="timeline__time">10:40 AM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Two Great Teams that Work Better Together: Bridging the Gap Between Documentation and Customer Support - Neal Kaplan
+                      <p class="timeline__desc">
+                        <a href="#">Two Great Teams that Work Better Together: Bridging the Gap Between Documentation and Customer Support - Neal Kaplan</a>
                       </p>
                     </div>
                   </div>
@@ -147,8 +282,8 @@
                       <p class="timeline__time">11:30 AM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        So You Need to Document an API? - Allison Reinheimer Moore
+                      <p class="timeline__desc">
+                        <a href="#">So You Need to Document an API? - Allison Reinheimer Moore</a>
                       </p>
                     </div>
                   </div>
@@ -167,8 +302,8 @@
                       <p class="timeline__time">12:10 AM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Crossing the Streams: Enabling Collaboration Between Products and Upstreams - Shaun McCance
+                      <p class="timeline__desc">
+                        <a href="#">Crossing the Streams: Enabling Collaboration Between Products and Upstreams - Shaun McCance</a>
                       </p>
                     </div>
                   </div>
@@ -197,8 +332,8 @@
                       <p class="timeline__time">01:40 PM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Lightning Talks
+                      <p class="timeline__desc">
+                        <a href="#">Lightning Talks</a>
                       </p>
                     </div>
                   </div>
@@ -217,8 +352,8 @@
                       <p class="timeline__time">02:20 PM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Copy That: Helping your Users Succeed with Effective Product Copy - Sarah Day
+                      <p class="timeline__desc">
+                        <a href="#">Copy That: Helping your Users Succeed with Effective Product Copy - Sarah Day</a>
                       </p>
                     </div>
                   </div>
@@ -237,8 +372,8 @@
                       <p class="timeline__time">03:00 PM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Write the Readable README - Daniel Beck
+                      <p class="timeline__desc">
+                        <a href="#">Write the Readable README - Daniel Beck</a>
                       </p>
                     </div>
                   </div>
@@ -257,8 +392,8 @@
                       <p class="timeline__time">03:35 PM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Continuous Annoyment: Bringing More Zen to a Hectic Writing Environment - Tana Franko
+                      <p class="timeline__desc">
+                        <a href="#">Continuous Annoyment: Bringing More Zen to a Hectic Writing Environment - Tana Franko</a>
                       </p>
                     </div>
                   </div>
@@ -267,8 +402,8 @@
                       <p class="timeline__time">03:50 PM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Embed The Docs! - Kristof Van Tomme
+                      <p class="timeline__desc">
+                        <a href="#">Embed The Docs! - Kristof Van Tomme</a>
                       </p>
                     </div>
                   </div>
@@ -287,8 +422,8 @@
                       <p class="timeline__time">04:30 PM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Writing So Your Words Are Read - Tracy Osborn
+                      <p class="timeline__desc">
+                        <a href="#">Writing So Your Words Are Read - Tracy Osborn</a>
                       </p>
                     </div>
                   </div>
@@ -307,8 +442,8 @@
                       <p class="timeline__time">05:40 PM</p>
                     </div>
                     <div class="col-xs-8 timeline__border-line">
-                      <p class="timeline__desc timeline__desc--highlighted">
-                        Panel: Transforming your Documentation Process - Leon Barnard, Zach Corleissen, Ted Hudek, Jon Bulava, moderated by Riona MacNamara
+                      <p class="timeline__desc">
+                        <a href="#">Panel: Transforming your Documentation Process - Leon Barnard, Zach Corleissen, Ted Hudek, Jon Bulava, moderated by Riona MacNamara</a>
                       </p>
                     </div>
                   </div>
@@ -333,11 +468,529 @@
                     </div>
                   </div>
                 </div>
-                <div class="timeline tab-pane fade in" id="tabMonday">
-                  123223
+                <div class="timeline tab-pane fade in active" id="tabMonday">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">08:00 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Doors Open, Breakfast Served</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">09:00 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Introduction & State of the Docs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">09:20 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">09:30 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Technical writing as public service: working on open source in government - Britta Gustafson</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">10:00 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">10:40 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Two Great Teams that Work Better Together: Bridging the Gap Between Documentation and Customer Support - Neal Kaplan</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">11:00 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Snack Break
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">11:30 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">So You Need to Document an API? - Allison Reinheimer Moore</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">11:40 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">12:10 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Crossing the Streams: Enabling Collaboration Between Products and Upstreams - Shaun McCance</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">01:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Lunch
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">01:10 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Sponsored Talk
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">01:40 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Lightning Talks</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">01:50 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">02:20 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Copy That: Helping your Users Succeed with Effective Product Copy - Sarah Day</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">02:30 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">03:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Write the Readable README - Daniel Beck</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">03:20 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Snack Break
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">03:35 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Continuous Annoyment: Bringing More Zen to a Hectic Writing Environment - Tana Franko</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">03:50 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Embed The Docs! - Kristof Van Tomme</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">04:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">04:30 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Writing So Your Words Are Read - Tracy Osborn</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">04:40 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">05:40 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Panel: Transforming your Documentation Process - Leon Barnard, Zach Corleissen, Ted Hudek, Jon Bulava, moderated by Riona MacNamara</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">07:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Party Begins
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">10:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line timeline__border-line--last">
+                      <p class="timeline__desc">
+                        Party Ends
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="timeline tab-pane fade in" id="tabTuesday">
-                  123223
+                <div class="timeline tab-pane fade in active" id="tabTuesday">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">08:00 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Doors Open, Breakfast Served</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">09:00 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Introduction & State of the Docs
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">09:20 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">09:30 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Technical writing as public service: working on open source in government - Britta Gustafson</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">10:00 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">10:40 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Two Great Teams that Work Better Together: Bridging the Gap Between Documentation and Customer Support - Neal Kaplan</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">11:00 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Snack Break
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">11:30 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">So You Need to Document an API? - Allison Reinheimer Moore</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">11:40 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">12:10 AM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Crossing the Streams: Enabling Collaboration Between Products and Upstreams - Shaun McCance</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">01:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Lunch
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">01:10 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Sponsored Talk
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">01:40 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Lightning Talks</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">01:50 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">02:20 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Copy That: Helping your Users Succeed with Effective Product Copy - Sarah Day</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">02:30 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">03:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Write the Readable README - Daniel Beck</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">03:20 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Snack Break
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">03:35 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Continuous Annoyment: Bringing More Zen to a Hectic Writing Environment - Tana Franko</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">03:50 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Embed The Docs! - Kristof Van Tomme</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">04:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">04:30 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Writing So Your Words Are Read - Tracy Osborn</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">04:40 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Switch Speakers
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">05:40 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        <a href="#">Panel: Transforming your Documentation Process - Leon Barnard, Zach Corleissen, Ted Hudek, Jon Bulava, moderated by Riona MacNamara</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">07:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line">
+                      <p class="timeline__desc">
+                        Party Begins
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <p class="timeline__time">10:00 PM</p>
+                    </div>
+                    <div class="col-xs-8 timeline__border-line timeline__border-line--last">
+                      <p class="timeline__desc">
+                        Party Ends
+                      </p>
+                    </div>
+                  </div>
                 </div>
             </div>
             </div>
@@ -370,17 +1023,17 @@
         <div class="row">
           <div class="col-xs-12 col-md-9 text-xs-center text-md-left">
             <ul class="list-unstyled footer__copy copy">
-              <li><a href="#" class="copy__item copy__item--first">© 2017 Write the Docs</a></li>
+              <li><p class="copy__item copy__item--first">© 2017 Write the Docs</p></li>
               <li><a href="#" class="copy__item">Code of Conduct</a></li>
               <li><a href="#" class="copy__item">Write the Docs</a></li>
             </ul>
           </div>
           <div class="col-xs-12 col-md-3 text-xs-center text-md-right"> 
             <ul class="socials list-inline">
-              <li><a href="#" class="socials__item">Twi</a></li>
-              <li><a href="#" class="socials__item">Flickr</a></li>
-              <li><a href="#" class="socials__item">Insta</a></li>
-              <li><a href="#" class="socials__item">GitHub</a></li>
+              <li><a href="#" class="socials__item">&#xe906;</a></li>
+              <li><a href="#" class="socials__item socials__item--flickr">&#xe905;</a></li>
+              <li><a href="#" class="socials__item">&#xe904;</a></li>
+              <li><a href="#" class="socials__item">&#xe903;</a></li>
             </ul>
           </div>
         </div>

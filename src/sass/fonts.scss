@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'ico-moon';
+  src: url('../dist/icomoon/fonts/icomoon.eot'); /* IE9 Compat Modes */
+  src: url('../dist/icomoon/fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      //  url('../fonts/webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../dist/icomoon/fonts/icomoon.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../dist/icomoon/fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../dist/icomoon/fonts/icomooon.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+.ico-moon {
+  font-family: 'ico-moon' !important;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700|Roboto+Mono:500,700');

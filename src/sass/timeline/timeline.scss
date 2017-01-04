@@ -54,8 +54,14 @@
     @media (min-width: $screen-lg-min) {
       margin-left: $line-margin * 6;
     }
-    &--highlighted {
-      color: #FFB61D;
+    & > {
+      a {
+        color: #FFB61D;
+        &:hover, &:focus {
+          color: #FFCA48 !important;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
