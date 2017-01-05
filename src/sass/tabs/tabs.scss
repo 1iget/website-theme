@@ -12,7 +12,13 @@
         text-align: center;
         padding-top: 25px;
         padding-bottom: 25px;
-        &:hover, &:focus {
+        transition: background-color 200ms ease;
+        &:hover {
+          background-color: #F1F4F5;
+          text-decoration: none;
+        }
+        &:focus, &:hover:focus {
+          background-color: #132530 !important;
           text-decoration: none;
         }
       }
@@ -20,7 +26,9 @@
   }
   
   .active {
-    background-color: #132530;
+    a {
+      background-color: #132530 !important;
+    }
     
     .tabs__day {
       color: #fff;

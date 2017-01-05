@@ -1,18 +1,26 @@
-.well {
-  display: block;
+a.well {
   cursor: pointer;
-  height: 300px;
-  border: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .2) !important;
   transition: box-shadow 400ms ease;
   
   &:hover, &:focus {
     text-decoration: none !important;
     box-shadow: 0px 12px 25px 0px rgba(0,0,0,0.15) !important;
   }
+}
+
+.well {
+  display: block;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .2) !important;
+  background-color: #fff !important;
+  height: 300px;
   
-  &__title {
+  &--fluid-height {
+    height: auto;
+  }
+  
+  h3 {
     color: #122530;
     margin-top: 8px;
     margin-bottom: 20px;
@@ -21,7 +29,7 @@
     font-weight: 700;  
   }
   
-  &__paragraph {
+  p {
     color: #45545F;
     max-height: 120px;
     overflow: hidden;
@@ -30,7 +38,7 @@
     font-weight: 400;
   }
   
-  &__time {
+  div {
     color: #122530;
     opacity: .4;
     margin-bottom: 40px;

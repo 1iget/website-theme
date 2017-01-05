@@ -22,8 +22,17 @@
   
   &__submit {
     opacity: .5;
-    border-color: #B0B6BB !important;
-    color: #B0B6BB !important;
+    border-color: #909BA3 !important;
+    color: #909BA3 !important;
     text-transform: uppercase;
+    transition: all 200ms ease;
+    
+    &:hover, &:focus {
+      border-color: #132530 !important;
+      color: #132530 !important;
+    }
+    &:active {
+      box-shadow: none !important;
+    }
   }
 }

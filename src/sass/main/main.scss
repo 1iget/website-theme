@@ -22,9 +22,14 @@ $padding-vertical-lg: 70px;
       columns: 2;
       column-gap: 80px;
     }
+    img {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100% !important;
+    }
   }
   
-  &__heading {
+  h3 {
     margin-top: 0;
     font-size: 20px;
     color: #152530;
@@ -32,18 +37,21 @@ $padding-vertical-lg: 70px;
     line-height: 1.7em;
   }
   
-  &__paragraph {
+  p {
     line-height: 1.85em;
     margin-bottom: 20px;
     color: #566772;
-    
-    &--subheader {
-      font-weight: 700;
-      color: #152530;
-    }
   }
   
-  &__list {
+  h5 {
+    line-height: 1.85em;
+    margin-bottom: 20px;
+    color: #566772;
+    font-weight: 700;
+    color: #152530;
+  }
+  
+  ul {
     margin-top: 50px;
     margin-bottom: 20px;
     color: #45545F;
@@ -63,7 +71,7 @@ $padding-vertical-lg: 70px;
     }
   }
   
-  &__image {
+  img {
     display: block;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -84,12 +92,6 @@ $padding-vertical-lg: 70px;
       margin-right: calc((-1) * #{$padding-horizontal-lg});
       width: 100%;
       width: calc(100% + 2*#{$padding-horizontal-lg});
-    }
-    
-    &--columns {
-      margin-left: 0;
-      margin-right: 0;
-      width: 100%;
     }
   }
 }

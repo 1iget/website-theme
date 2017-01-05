@@ -5,7 +5,8 @@
   
   &__item {
     padding-bottom: 20px;
-    a {
+    a, span {
+      cursor: pointer;
       font-family: "Roboto Mono";
       font-size: 16px;
       text-transform: uppercase;
@@ -17,10 +18,10 @@
     }
     &[data-dropdown-mobile] {
       & > {
-        a::after {
+        span::after {
           font-family: 'ico-moon' !important;
           font-size: 5px;
-          color: #B0B6BB;
+          color: #909BA3;
           content: ' \e908';
           display: inline-block;
           padding: 8px;
@@ -30,7 +31,7 @@
       }
       &.show {
         & > {
-          a::after {
+          span::after {
             transform: none;
           }
         }

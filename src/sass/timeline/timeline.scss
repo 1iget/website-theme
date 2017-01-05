@@ -58,8 +58,8 @@
       a {
         color: #FFB61D;
         &:hover, &:focus {
-          color: #FFCA48 !important;
-          text-decoration: none;
+          color: #FFB61D !important;
+          text-decoration: underline;;
         }
       }
     }
