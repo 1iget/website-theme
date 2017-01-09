@@ -1,6 +1,14 @@
 @import 'fonts';
 @import 'variables';
 
+//vendors
+@import 'bootstrap';
+@import 'bootstrap-css';
+@import '../owl/owl.carousel';
+
+//styles
+@import 'common/container';
+
 @import 'offcanvas/offcanvas';
 @import 'offcanvas/menu-mobile';
 
@@ -37,11 +45,6 @@
 @import 'footer/socials';
 
 @import 'button/button';
-
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap-custom';
-@import 'bootstrap-css';
-
-@import '../owl/owl.carousel.scss';
 
 .mark2 {
   border: 1px solid gray;

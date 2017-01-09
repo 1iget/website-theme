@@ -1,5 +1,7 @@
 .menu {
   display: none;
+  padding-left: $grid-gutter-width/2;
+  padding-right: $grid-gutter-width/2;
   @media (min-width: $screen-md-min) {
     max-width: 940px;
     display: block;
@@ -10,13 +12,16 @@
   
   margin-left: auto;
   margin-right: auto;
-  background-color: #fff;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   z-index: 20;
+  
+  &__wrapper {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, .2);
+  }
   
   &__list {
     margin-bottom: 0;
