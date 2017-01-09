@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     prefix = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
-    // sourcemaps = require('gulp-sourcemaps'), 
+    sourcemaps = require('gulp-sourcemaps'), 
     rename = require('gulp-rename'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
@@ -16,16 +16,16 @@ function errorLog (error) {
 //sass + prefix
 gulp.task('sass', function () {
   return gulp.src('./src/sass/styles.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(prefix('last 2 versions'))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('minify-css', function () {
   return gulp.src('./dist/css/styles.css')
-    // .pipe(sourcemaps.init())
     .pipe(cleanCSS())
-    // .pipe(sourcemaps.write())
     .pipe(rename('styles.min.css'))
     .pipe(gulp.dest('./dist'));
 });
