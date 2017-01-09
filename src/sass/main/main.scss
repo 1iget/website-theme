@@ -28,41 +28,28 @@ $padding-vertical-lg: 70px;
       width: 100% !important;
     }
   }
-  
-  h3 {
-    margin-top: 0;
-    font-size: 20px;
-    color: #152530;
-    margin-bottom: 40px;
-    line-height: 1.7em;
-  }
+
   
   h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    // color: #152530;
+    color: black;
     &:before { 
       display: block; 
       content: " "; 
       margin-top: -70px; 
       height: 70px; 
-      visibility: hidden; 
+      visibility: hidden;
     }
   }
   
   p {
-    
     margin-bottom: 20px;
     color: black;
   }
   
-  h5 {
-    
-    margin-bottom: 20px;
-    color: #566772;
-    font-weight: 700;
-    color: #152530;
-  }
-  
   ul {
-    color: #45545F;
+    color: black;
     margin-left: 0;
     padding-left: 1em;
     
