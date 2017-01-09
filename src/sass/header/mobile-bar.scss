@@ -39,16 +39,15 @@
     display: inline-block;
     float: left;
     color: #132530;
-    padding: 0 !important;
-    bottom: 0 !important;
+    padding: 0;
     font-family: 'ico-moon';
     font-size: 20px;
-    color: #132530 !important;
-    padding: 0 !important;
-    border: 0 !important;
+    border: 0;
     margin: 15px;
+    margin-top: 12px;
     &:hover, &:focus {
-      text-decoration: none !important;
+      color: #132530;
+      text-decoration: none;
     }
   }
 }
