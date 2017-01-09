@@ -71,20 +71,30 @@
   
   &__date {
     position: relative;
-    background-color: $yellow;
-    height: 2px;
     @media (min-width: $screen-md-min) {
       margin-top: 10px;
     }
-    p {
+    &:after {
       position: absolute;
-      color: $yellow !important;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      content: "";
+      display: block;
+      background-color: $yellow;
+      height: 2px;
+      width: 100%;
+    }
+    time {
+      position: relative;
+      bottom: -2px;
+      z-index: 2;
+      color: $yellow;
       font-weight: 700 !important;
       font-size: 11px;
-      top: -8px;
-      padding-right: 20px;
       text-transform: uppercase;
       background-color: #fff;
+      padding-right: 20px;
     }
   }
   
@@ -92,12 +102,12 @@
     h3 {
       color: #152530 !important;
       font-weight: 700 !important;
-      font-size: 18px !important;
+      margin-bottom: 36px;
     }
     
     p {
       font-size: 14px;
-      line-height: 1.85em;
+      
     }
   }
 }

@@ -167,6 +167,7 @@
   .menu__list {
     margin-bottom: 0; }
   .menu__list-item {
+    margin: 0;
     margin-bottom: 0; }
     @media (min-width: 992px) {
       .menu__list-item {
@@ -301,7 +302,6 @@
     margin-bottom: 20px;
     font-weight: 500; }
   .home-about p {
-    line-height: 1.85em;
     font-weight: 400; }
 
 .main {
@@ -335,24 +335,26 @@
     color: #152530;
     margin-bottom: 40px;
     line-height: 1.7em; }
+  .main h1:before, .main h2:before, .main h3:before, .main h4:before, .main h5:before, .main h6:before {
+    display: block;
+    content: " ";
+    margin-top: -70px;
+    height: 70px;
+    visibility: hidden; }
   .main p {
-    line-height: 1.85em;
     margin-bottom: 20px;
-    color: #566772; }
+    color: black; }
   .main h5 {
-    line-height: 1.85em;
     margin-bottom: 20px;
     color: #566772;
     font-weight: 700;
     color: #152530; }
   .main ul {
-    margin-top: 50px;
-    margin-bottom: 20px;
     color: #45545F;
     margin-left: 0;
     padding-left: 1em; }
     .main ul > li {
-      padding-left: 1.6em;
+      padding-left: 0;
       padding-bottom: 10px;
       line-height: 1.6em; }
       .main ul > li:last-child {
@@ -388,12 +390,12 @@
     margin-left: auto;
     margin-right: auto; }
 
-.section {
+section.section {
   padding-bottom: 70px;
   border-bottom: 1px solid #E3E4E5; }
-  .section--last {
+  section.section--last {
     border-bottom: none; }
-  .section__more {
+  section.section__more {
     font-family: "Roboto Mono";
     font-weight: 500;
     color: #909BA3;
@@ -472,8 +474,7 @@
     display: inline-block;
     color: #556772;
     max-width: 300px;
-    margin-bottom: 2em;
-    line-height: 1.85em; }
+    margin-bottom: 2em; }
   .schedule-home__more {
     font-family: "Roboto Mono";
     font-weight: 700;
@@ -649,30 +650,38 @@
       clear: both; } }
 
 .speakers__date {
-  position: relative;
-  background-color: #FDB812;
-  height: 2px; }
+  position: relative; }
   @media (min-width: 992px) {
     .speakers__date {
       margin-top: 10px; } }
-  .speakers__date p {
+  .speakers__date:after {
     position: absolute;
-    color: #FDB812 !important;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: "";
+    display: block;
+    background-color: #FDB812;
+    height: 2px;
+    width: 100%; }
+  .speakers__date time {
+    position: relative;
+    bottom: -2px;
+    z-index: 2;
+    color: #FDB812;
     font-weight: 700 !important;
     font-size: 11px;
-    top: -8px;
-    padding-right: 20px;
     text-transform: uppercase;
-    background-color: #fff; }
+    background-color: #fff;
+    padding-right: 20px; }
 
 .speakers__content h3 {
   color: #152530 !important;
   font-weight: 700 !important;
-  font-size: 18px !important; }
+  margin-bottom: 36px; }
 
 .speakers__content p {
-  font-size: 14px;
-  line-height: 1.85em; }
+  font-size: 14px; }
 
 a.well {
   cursor: pointer;
@@ -690,11 +699,10 @@ a.well {
   height: 300px; }
   .well--fluid-height {
     height: auto; }
-  .well h3 {
+  .well h5 {
     color: #122530;
     margin-top: 8px;
     margin-bottom: 20px;
-    font-size: 14px;
     line-height: 1.85;
     font-weight: 700; }
   .well p {
@@ -1281,7 +1289,7 @@ html {
 body {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.85;
   color: rgba(19, 37, 48, 0.5);
   background-color: #F3F3F3; }
 
@@ -1298,7 +1306,7 @@ a {
   text-decoration: none; }
   a:hover, a:focus {
     color: #23527c;
-    text-decoration: underline; }
+    text-decoration: none; }
   a:focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px; }
@@ -1319,7 +1327,7 @@ img {
 
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.42857;
+  line-height: 1.85;
   background-color: #F3F3F3;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -1332,8 +1340,8 @@ img {
   border-radius: 50%; }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #eeeeee; }
 
@@ -1385,8 +1393,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 20px;
-  margin-bottom: 10px; }
+  margin-top: 25px;
+  margin-bottom: 12.5px; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -1401,8 +1409,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 12.5px;
+  margin-bottom: 12.5px; }
   h4 small,
   h4 .small, .h4 small,
   .h4 .small,
@@ -1415,16 +1423,16 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 36px; }
+  font-size: 23px; }
 
 h2, .h2 {
-  font-size: 30px; }
+  font-size: 19px; }
 
 h3, .h3 {
-  font-size: 24px; }
+  font-size: 19px; }
 
 h4, .h4 {
-  font-size: 18px; }
+  font-size: 17px; }
 
 h5, .h5 {
   font-size: 14px; }
@@ -1433,10 +1441,10 @@ h6, .h6 {
   font-size: 12px; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0 0 12.5px; }
 
 .lead {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4; }
@@ -1554,14 +1562,14 @@ a.bg-danger:focus {
   background-color: #e4b9b9; }
 
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 11.5px;
+  margin: 50px 0 25px;
   border-bottom: 1px solid #eeeeee; }
 
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 10px; }
+  margin-bottom: 12.5px; }
   ul ul,
   ul ol,
   ol ul,
@@ -1583,11 +1591,11 @@ ol {
 
 dl {
   margin-top: 0;
-  margin-bottom: 20px; }
+  margin-bottom: 25px; }
 
 dt,
 dd {
-  line-height: 1.42857; }
+  line-height: 1.85; }
 
 dt {
   font-weight: bold; }
@@ -1623,8 +1631,8 @@ abbr[data-original-title] {
   font-size: 90%; }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 12.5px 25px;
+  margin: 0 0 25px;
   font-size: 17.5px;
   border-left: 5px solid #eeeeee; }
   blockquote p:last-child,
@@ -1636,7 +1644,7 @@ blockquote {
   blockquote .small {
     display: block;
     font-size: 80%;
-    line-height: 1.42857;
+    line-height: 1.85;
     color: #777777; }
     blockquote footer:before,
     blockquote small:before,
@@ -1666,9 +1674,9 @@ blockquote.pull-right {
     content: '\00A0 \2014'; }
 
 address {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-style: normal;
-  line-height: 1.42857; }
+  line-height: 1.85; }
 
 code,
 kbd,
@@ -1698,10 +1706,10 @@ kbd {
 
 pre {
   display: block;
-  padding: 9.5px;
-  margin: 0 0 10px;
+  padding: 12px;
+  margin: 0 0 12.5px;
   font-size: 13px;
-  line-height: 1.42857;
+  line-height: 1.85;
   word-break: break-all;
   word-wrap: break-word;
   color: #333333;
@@ -2254,7 +2262,7 @@ pre {
   white-space: nowrap;
   padding: 6px 12px;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.85;
   border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2515,7 +2523,7 @@ fieldset[disabled] a.btn {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
     color: #23527c;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus,
   fieldset[disabled] .btn-link:hover,
@@ -2609,7 +2617,7 @@ tbody.collapse.in {
     border-color: #337ab7; }
   .nav .nav-divider {
     height: 1px;
-    margin: 9px 0;
+    margin: 11.5px 0;
     overflow: hidden;
     background-color: #e5e5e5; }
   .nav > li > a > img {
@@ -2622,7 +2630,7 @@ tbody.collapse.in {
     margin-bottom: -1px; }
     .nav-tabs > li > a {
       margin-right: 2px;
-      line-height: 1.42857;
+      line-height: 1.85;
       border: 1px solid transparent;
       border-radius: 4px 4px 0 0; }
       .nav-tabs > li > a:hover {
@@ -2809,7 +2817,7 @@ tbody.collapse.in {
 
 .modal-title {
   margin: 0;
-  line-height: 1.42857; }
+  line-height: 1.85; }
 
 .modal-body {
   position: relative;
@@ -2861,7 +2869,7 @@ tbody.collapse.in {
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.42857;
+  line-height: 1.85;
   text-align: left;
   text-align: start;
   text-decoration: none;
@@ -2974,7 +2982,7 @@ tbody.collapse.in {
   font-weight: normal;
   letter-spacing: normal;
   line-break: auto;
-  line-height: 1.42857;
+  line-height: 1.85;
   text-align: left;
   text-align: start;
   text-decoration: none;

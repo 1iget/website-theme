@@ -53,5 +53,4 @@ $(document).ready(function() {
     } 
   }
   $('[data-dropdown-mobile]').children('span').click(toggleDropDownMobile);
-  
 });

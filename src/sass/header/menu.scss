@@ -23,6 +23,7 @@
   }
   
   &__list-item {
+    margin: 0;
     margin-bottom: 0;
     @media (min-width: $screen-md-min) {
       width: 110px;
