@@ -31,7 +31,7 @@
 @import 'news/news-post';
 
 @import 'speakers/speakers';
-@import 'well/well';  
+@import 'well/well';
 @import 'tabs/tabs';
 
 @import 'timeline/timeline';
@@ -48,4 +48,25 @@
 
 .mark2 {
   border: 1px solid gray;
+}
+
+/* Added for new sponsor block */
+
+.sponsor-image {
+	width: auto;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* optional (aligning image to left or right) */
+.sponsor-image-left {
+	margin-left: 0;
+}
+
+.sponsor-image-right {
+	margin-right: 0;
 }

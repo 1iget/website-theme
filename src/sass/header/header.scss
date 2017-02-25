@@ -2,7 +2,7 @@
   background-color: #E3E4E5;
   background-image: radial-gradient(circle at top, #F7F8F8, #E3E4E5);
   padding-top: 60px;
-  
+
   &__title {
     font-family: 'Roboto Mono';
     font-weight: 700;
@@ -12,11 +12,11 @@
     position: relative;
     margin-top: 40px;
     margin-bottom: 140px;
-    
+
     @media (min-width: $screen-sm-min) {
       margin-top: 75px;
     }
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -28,11 +28,11 @@
       height: 4px;
     }
   }
-  
+
   &__title-group {
     position: relative;
   }
-  
+
   &__back {
     font-family: 'ico-moon';
     font-size: 18px;
@@ -56,18 +56,18 @@
       text-decoration: none;
     }
   }
-  
+
   &__logo {
     margin-top: 80px;
     display: none;
     @media (min-width: $screen-md-min) {
       display: block;
-      border-left: 1px solid #D9DDE0;
-      border-right: 1px solid #D9DDE0;
+      border-left: 0px solid #D9DDE0;
+      border-right: 0px solid #D9DDE0;
     }
-    
+
     img {
-      width: 150px;
+      width: 250px;
     }
   }
 }
